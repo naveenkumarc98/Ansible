@@ -1,6 +1,6 @@
 - name: variables checking
   hosts: local
-  connections: local
+  connection: local
   vars:
     COURSE: DEVOPS WITH AWS
     TRAINER: NAVEEN
@@ -8,6 +8,6 @@
   tasks:
   - name: print course info 
     ansible.builtin.debug:
-      msg: Iam {{TRAINER}} and giving course {{COURSE}} with {{TIME}}
-      
+      msg: "Iam {{TRAINER}} and giving course {{COURSE}} with {{TIME}}""
+
 
