@@ -10,4 +10,4 @@
   - name: print the number 
     ansible.builtin.debug:
       msg: "print number {{NUMBER}}"
-    when: NUMBER < 100
+    when: "{{NUMBER}}" <= 100
