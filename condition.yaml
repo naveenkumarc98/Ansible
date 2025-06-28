@@ -1,8 +1,9 @@
 - name: conditions testing
   hosts: local
   connection: local
-  vars:
-    Number: 98
+  vars_prompt:
+    prompt: enter the number
+    private: false
 
   tasks:
   - name: print number 
