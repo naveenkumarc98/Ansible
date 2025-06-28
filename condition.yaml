@@ -6,6 +6,6 @@
 
   tasks:
   - name: print number 
-  ansible.builtin.debug:
-    msg: "print number {{Number}}"
+    ansible.builtin.debug:
+      msg: "print number {{Number}}"
   when: Number < 100
