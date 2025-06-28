@@ -12,6 +12,6 @@
       ansible.builtin.debug:
         msg: "Iam {{TRAINER}} ,and giving course {{COURSE}}, with {{TIME}}"
 
-# - name: print about course again
-#   ansible.builtin.debug:
-#      msg: "iam {{TRAINER}} who giving course {{COURSE}} with {{TIME}}"
+    - name: print about course again
+      ansible.builtin.debug:
+        msg: "Iam {{TRAINER}} ,and giving course {{COURSE}}, with {{TIME}}"
