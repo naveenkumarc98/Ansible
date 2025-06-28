@@ -1,0 +1,8 @@
+- name: variable from inventory
+  hosts: local
+  connection: local
+
+  tasks:
+  - name: printing about username and password details
+    ansible.builtin.debug:
+      msg: "your username is{{USERNAME}} and your password is {{PASSWORD}}"
