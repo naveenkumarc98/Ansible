@@ -2,12 +2,12 @@
   hosts: local
   connection: local
   vars_prompt:
-  - name: Number
+  - name: NUMBER
     prompt: enter the number
     private: false
 
   tasks:
   - name: print the number 
     ansible.builtin.debug:
-      msg: "print number {{Number}}"
-    when: Number < 100
+      msg: "print number {{NUMBER}}"
+    when: NUMBER < 100
