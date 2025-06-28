@@ -3,13 +3,14 @@
   connection: local
   vars:
     name: "naveen kumar c kumar reddy"
+
   tasks:
   - name: convert to uppercase
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
 
-  tasks:
-  - name: convert to lowercase
-    ansible.builtin.debug:
-      msg: "Hello {{ name | lower }}"
+  # tasks:
+  # - name: convert to lowercase
+  #   ansible.builtin.debug:
+  #     msg: "Hello {{ name | lower }}"
 
