@@ -1,0 +1,11 @@
+- name: conditions testing
+  hosts: local
+  connection: local
+  vars:
+    Number: 98
+
+  tasks:
+  - name: print number 
+  ansible.builtin.debug:
+    msg: "print number {{Number}}"
+  when: Number < 100
