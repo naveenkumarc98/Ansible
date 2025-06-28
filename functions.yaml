@@ -1,9 +1,15 @@
 - name: functions in ansible
   hosts: local
   connection: local
+  vars:
+    name: "naveen kumar c kumar reddy"
   tasks:
   - name: convert to uppercase
-    vars:
-      name: "naveen kumar c"
     ansible.builtin.debug:
       msg: "Hello {{ name | upper }}"
+
+  tasks:
+  - name: convert to lowercase
+    ansible.builtin.debug:
+      msg: "Hello {{ name | lower }}"
+
