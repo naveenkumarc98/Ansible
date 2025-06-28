@@ -7,7 +7,7 @@
     private: false
 
   tasks:
-  - name: print number 
+  - name: print the number 
     ansible.builtin.debug:
       msg: "print number {{Number}}"
     when: Number < 100
